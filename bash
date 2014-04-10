@@ -7,16 +7,17 @@
 @RMD160: cd21a9f51ea7780994d4e2c9c7d16d5eb000f845 
 @Mirror-1: http://psg.mtu.edu/pub/gnu/bash/bash-4.3.tar.gz
 @Maintainer: Jack Maloney <jmmaloney4@gmail.com>
-@Depends: com.IV.test, com.r.superpackage
-@Recomended: com.d.fff
+@Depends:
+@Recomended:
 
-&build {
+# Build Method
+@BUILD
+	./configure --prefix=$XPKG_PKG_DIR
+	make
+	make install
+@END
 
-	$ ./configure --prefix=/opt/xpkg/xpkgs/bash/4.3/
-	$ /usr/bin/make
-	% cp bash
-}
+# The Install Method
+@INSTALL
 
-&install {
-	%ln bash bin
-}
+@END
