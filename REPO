@@ -1,3 +1,4 @@
 @Name: Xpkg
 @Description: The repository that is installed by default, it mostly contains a few basic Unix tools.
 @Maintainer: Jack Maloney
+@Git: https://github.com/jmmaloney4/Xpkg-packages.git
