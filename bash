@@ -19,5 +19,5 @@
 
 # The Install Method
 @INSTALL
-
+	ln $XPKG_PKG_DIR/bin/* $XPKG_ROOT_DIR/bin/
 @END
