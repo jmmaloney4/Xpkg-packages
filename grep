@@ -1,0 +1,22 @@
+@Package: grep
+@Name: Grep
+@Version: 2,18
+@Description: A UNIX Command Line Tool, that parses strings and files
+@URL: http://ftp.wayne.edu/gnu/grep/grep-2.18.tar.xz
+@SHA256: fdb12580714966745635da7d9db55060f88db28b
+@RMD160: ceab2b128640718e73616863e9c506c9666517d6
+@Maintainer: Jack Maloney <jmmaloney4@gmail.com>
+@Depends: bash
+@Recomended:
+
+# Build Method
+@BUILD
+	./configure --prefix=$XPKG_PKG_DIR
+	make
+	make install
+@END
+
+# The Install Method
+@INSTALL
+	ln $XPKG_PKG_DIR/bin/* $XPKG_ROOT_DIR/bin/
+@END
