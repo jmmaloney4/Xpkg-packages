@@ -12,12 +12,17 @@
 
 # Build Method
 @BUILD
-	./configure --prefix=$XPKG_PKG_DIR
-	make
-	make install
+./configure --prefix=$XPKG_PKG_DIR
+make
+make install
 @END
 
 # The Install Method
 @INSTALL
-	ln $XPKG_PKG_DIR/bin/* $XPKG_ROOT_DIR/bin/
+ln $XPKG_PKG_DIR/bin/* $XPKG_ROOT_DIR/bin/
+@END
+
+@REMOVE
+rm $XPKG_ROOT_DIR/bin/bash
+m $XPKG_ROOT_DIR/bin/bashbug
 @END
