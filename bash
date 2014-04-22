@@ -24,5 +24,9 @@ ln $XPKG_PKG_DIR/bin/* $XPKG_ROOT_DIR/bin/
 
 @REMOVE
 rm $XPKG_ROOT_DIR/bin/bash
-m $XPKG_ROOT_DIR/bin/bashbug
+rm $XPKG_ROOT_DIR/bin/bashbug
+@END
+
+@TEST
+exit 0
 @END
