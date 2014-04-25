@@ -1,10 +1,10 @@
 @Package: autogen
 @Name: Autogen
 @Version: 5.18.2
-@Description: The Bash Shell
+@Description: GNU Autogen
 @URL: http://ftp.wayne.edu/gnu/autogen/rel5.18.2/autogen-5.18.2.tar.gz
 @SHA256: c63a0f567b4ad90c4243efbd2420c51e6b63309a
-@RMD160: 7c06e3fc60d69f784f70828db32643c82394eea9 
+@RMD160: 7c06e3fc60d69f784f70828db32643c82394eea9
 @Maintainer: Jack Maloney <jmmaloney4@gmail.com>
 @Depends: bash
 @Recomended:
